@@ -1,0 +1,623 @@
+12-07-22
+Full Stack Web Application :-
+Now-a-days Full stack is
+1.Design --> React - Front end 
+2.Develop --> Express Node -MongoDB 
+3.Test --> Eslint 
+4.Deploy --> Heroku
+
+R:- React is meant for front end application development only
+E:- Express is to connect or create backend,server,database
+N:- NodeJS is an environment to develop both client side and server side applications
+M:- MongoDB is for storage of data
+
+///"JavaScript is the only language used to work with MernStack"///
+Task 1: Create a HTML page which displays 3 paragraphs with 3 images
+Hint : Use HTMl as extension, Tags : img,<p>
+NodeJS current version
+VS code editor
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13-07-22
+--> React JS is a library created through Javascript
+--> React is used to develop front end applications with rich UI 
+--> React supports SPA - single page application
+--> React JS supports JSX - Javascript extension
+--> React is also now avilable for mobiles
+--> It is simple
+--> It is an asynchronous application
+Examples of ReactJS : Facebook,Netflix
+
+Steps to create React application :
+1.Create a directory or folder for an application
+2.Use npm or npx tools to create or generate default code for react application
+3.Use following commands
+    npm create-react-app appname
+    npx create-react-app appname
+4.Naviagte or move to app directory            (cd cse) (code .)
+5.Open Visual Studio Code editor and select terminal menu and select "new terminal"
+6.Use the command npm start
+7.It will open automatically at localhost:3000
+
+md - creating directory
+cd - changing directory
+
+
+**npm vs npx**
+npm : Node package manager is a tool to install or modify third party or external libraries
+npx : Node package executable is a tool to install and update third paty libraries or external packages
+--> npm occpies more space than npx
+--> npx is a tool for binary files to be executed after installing it will remove temporary files
+
+
+--> In order to work with ReactJS all UI components are treated as 2 ways : 
+1.Function based components
+2.Class based components
+--------------------------------------------------------------------------------------------------
+CONST is a keyword in Javascript to declare a variable whose value can't be changes
+Eg:const a=10
+VAR ia keyword in Javascript whose value can be declared and modified and redefined at any scope
+Let is a keyword to declare a variable whose value can be modified
+--------------------------------------------------------------------------------------------------
+In command prompt:
+cd.. change directory
+md classwork2
+cd classwork2
+npx create-react-app cseh
+y
+cd cseh
+code .
+vs code-> new terminal -> npm start
+---------------------------------------------------------------------------------------------------
+HA : Create 3 HTML pages (Home,Login,Register)
+Use images and videos in homepage
+Login page should look like erp login
+Register page should look like Facebook register page 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+14-07-22
+Script is code to be executed
+Dependencies are the libraries which are used for our application
+We need to work with 3 files namely 
+-->app.js which is in src folder
+-->index.html in public folder
+-->***package.json*** : It describes our application.File which provides all features,codes needed for our project
+
+
+Key Concepts of React app :
+1. React element : React element is nothing but an HTML tag.Each HTML tag in react called React element
+ Eg:<h1>,<p>,<br>
+2. React component : In react everything is a component. Visual piece of code that is interactive
+3. Root component : Every component is a collection of react elements.In react app.js is a component we call them root 
+ component because all other components are part of root component
+4. Props : Props are the arguments/values passed to each component 
+5. State : Each component is having a state which can be shared accross other components. State is a value which is 
+ communicated accross different sessions
+Eg:Saved passwords in outlook
+6. Types of components : In react components are of 2 types :
+  ----->Stateless function based components
+  ----->Statefull class based components
+7. Hierarchy of components : Each component are arranged inside root component in a hierarchical order
+8. **Plugins/Extensions** : Use ES7/REACT/REDUX/SNIPPETS must be installed in VS code editor to save design time using 
+ Ctrl+Shift+X
+9. *****Arrow Functions***** : From 2018 onwards Javascript supports ES6 model as arrow functions.Functions without names 
+are called as Arrow functions
+10. Import sections : We use import keyword to import and Export keyword is used to export modules/packages from one source 
+code to another code
+
+
+Steps to create components :
+1. Create a directory under src folder with the name "components" 
+2. Under components all components can be created with the filename .js
+3. The file name must be started with first-letter uppercase
+4. If we already install ES7 snippets or extension, type "rfce"(React function based component exported at end) or "rce"
+(React class based component exported at end) to generate code snippet for function based components or class based components
+5. Import the created component in app.js root component
+6. Use the created component by using it as a tag inside app
+-----------------------------------------------------------------------------------------------------
+TAsk : Create 2 components one is courses and other one is faculty by using List or Unordered list of courses and faculty
+Hint : Use <ul> tag in HTML to create unordered unordered list and <li> tag for list of items
+Follow steps of component creation
+Courses must be displayed after department component
+Faculty must be displayed after courses component
+app->department->courses->faculty
+
+
+import departments
+
+--------------------------------------------------------------------------------------------------------------------------------
+19-07-22
+** JSX IS A FORMAT WHICH CAN ACCESS THE VARIABLES OR OBJECTS BY USING  { variable name or object } **
+-------------------------------------------------------------------------------------------------------
+Working with images in ReactJS :
+--> Create a directory with name "images"
+--> Keep this directory either in public folder or src folder or components folder
+--> If we use in src folder it can be accessed by all other components
+--> **Import images as variables with alias names with their path**
+--> Include the variable under img tag or any other image tag 
+
+
+Working with Boolean values in ReactJS :
+--> In React boolean values are treated either true or false
+--> But they cannot be displayed as an output
+--> In order to do we use ternary operator
+Eg: Consider a=10 To make it 11
+    a++;
+    a+=1;
+    a=a+1;
+
+
+Working with "Arrays/Collections" in ReactJS :
+--> We can declare arrays as a collection with each item as internally consisting keys and values
+--> In ReactJS as well as JavaScript we use map method to iterate through induvidual items
+--> Each map method will return an array of items based on id
+--> Id is nothing but index
+
+Task 1 :
+* Create a component called as Faculty 
+* Create a folder images under components with atleast 3 images of faculty with jpg/jpeg format
+* Create a variable "const fac" with a list of faculty details of 3 with keys as id, name, designation, qualification,
+permanent(y/n)
+* This avaiable must be created in between the function and return statement
+* In return statement under div tag use fac.map()
+* Use this component inside App.js and display
+
+
+import one from './images/one.jpg'
+
+const mble=[{ 
+    "img":<img src={one} width="150" height="150"/>, 
+    "model":9, 
+    "name":"One Plus", 
+    "price":"Rs. 50,000/-", 
+    "available":true 
+}, 
+{ 
+   "img":<img src={i} width="150" height="150"/>, 
+   "model":14, 
+   "name":"iPhone", 
+   "price":"Rs. 1,50,000/-", 
+   "available":false 
+}]
+
+
+<div class="column"> 
+        {mble.map((mb) => (<h6 key={mb.id}>{mb.img}<br/> Model Number:{mb.model}<br/>Model Name:{mb.name}<br/>Price:{mb.price}<br/> 
+        Available: {mb.available 
+     ?"Yes" : "No"}</h6>))} 
+    </div>
+
+
+
+import React from 'react' 
+ 
+function Faculty() { 
+  return ( 
+    <div>Faculty 
+       <ul> 
+        <li>Hari Kiran Sir</li> 
+        <li>Murali Mohan Sir</li> 
+        <li>Vamsidhar Sir</li> 
+       </ul> 
+    </div> 
+  ) 
+} 
+ 
+export default Faculty
+
+--------------------------------------------------------------------------------------------------------------------------------------
+20-07-22
+--> Create a Department component with 3 images stored in "images" directory
+--> Create a collection of 3 departments with keys logo, dname, ftotal, NBA(y/n)
+
+Array : Similar datatypes, fixed length
+Collection : Different datatypes, no fixed length
+map() : It is a method iterating over items inside a "collection dept"
+
+
+https://mui.com/material-ui/react-image-list/
+https://mui.com/material-ui/react-button/
+https://mui.com/material-ui/react-card/
+https://mui.com/material-ui/react-paper/
+https://mui.com/material-ui/react-text-field/
+https://mui.com/material-ui/material-icons/
+
+
+By tomorrow :
+Create an id card for induvidual purpose using material UI including photograph,name,id,branch,year,H/D,details with avatar
+Hint: Install Material UI library
+	 Create card layout use photograph
+---------------------------------------------------------------------------------------------------------------------------------------
+21-07-22
+Working with Comments :
+--> In React we can use comment lines to describe the statements by using "jsx" format of comment
+--> { /* */ } comments 
+
+Props :
+--> Props is a argument or value to be passed/assigned to a component
+--> It works like arguments in a given function
+--> Props can be accessed using .operator
+*** We can use "jsx" format also in order to work like props
+
+
+Working with Props :
+Steps to create and work with Props :
+1. Create a function based component
+2. In arguments/ In {} use a keyword called props
+3. Use props.operator to represent or display a specific attribute in return statement
+4. Import the component in App.js
+5. Use the existing components along with the props names or attributes which are declared in given component
+
+Hints :
+1. Create a component "User.js"
+2. Use the keyword props in function argument
+3. Use the attributes like name,email and role
+4. In App.js use "Users" tag along with name,email,role
+5. < Users name="Darshan" email="darshan@gmail.com" role="Student" />
+
+Task :
+1. Create a component called "Roles" with username,password,role,logged in as 4 attributes
+2. Roles - 3
+   Tags - 3{student,faculty,admin}
+   logged in - ( should display current date ) Use moment ("new date")
+
+Task :
+Create a react app to display/demonstrate an entertainment portal for movies and ott platforms
+Eg : bookmyshow
+Hint : Use existing portals approach 
+Hint : Use card media layout in Material UI
+HINT : USE MATERIAL UI ONLY not HTML,CSS
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+26-07-22
+In search bar :
+1. Button
+2. Card
+3. Grid
+4. Navbar/Appbar
+5. Fab-Floating action button
+6. Image list
+7. Autofill- Textfield
+
+
+Task :
+1. Create 3 components :
+ --> Task1.js : Create a navbar with menu items similar to kluniversity.in
+ --> Task2.js : Create a registration page in MaterialUI with firstname,lastname,gender,phone,email,address,interested
+ courses,Username,password,confirm password
+(TextBox,TextBox,Radio,TextBox,TextBox,TextArea,Dropdown)
+Link : Already registered
+Buttons : Register(green) Clear(red)
+ --> Task3.js : Create a login page/sign-in page
+Buttons : Register,cancel,forgot password
+Create a registration
+
+**** State is used to hold the values and communicate between one component to other component ****
+1. We can achieve states in 2 ways
+--> Hooks It is a function attached to a variable/component 
+--> Redux
+Hooks :
+1. useState() : method used to store variable values to be rendered by using setters,getters
+--> json : JavaScript object notation
+* It is a collection of dictionary of dictionaries where dictionaries are used based on keys,values.Keys must be unique.The
+values can be duplicate
+* It is a common format used to exchange accross different applications
+
+IN MERN STACK DATA IS STORED IN THE FORMAT OF JSON ONLY
+MONGODB ALSO STORES DATA IN COLLECTION OF JSON FILES
+
+Axios is a library or package used to work with restful APIs
+API are used data to be exchanged with other application
+
+Routers : 
+url : It is address of a website/web application
+uri : It is an induvidual resource access identifier
+--> In react we can access induvidual components using Routers
+--> In React we use npm install react-router-dom package to work with uri's
+--> DOM : Document Object Model which is a induvidual component can be used as a one object inside a document
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+27-07-22
+Every appbar or menubar requires 2 induvidual components
+1.AppBar component
+	AppBar is responsible for collecting themes/fonts/styles
+2.ToolBar component
+	ToolBar is a part of AppBar responsible for Menu items
+
+
+In React we have 3 types of components
+1.Browser router
+2.Routes represent number of links to be created and 
+
+--> Create and Modify your existing project with Appbar,Routes
+Use MaterialUI 1 Appbar template code
+Create a component Navbar.js and copy the code
+Modify the pages accordingly
+Navigate page by using Link in page collection with map method
+Go to index.js and import 
+Go to app.js and import { Routes,Route } 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+28-07-22
+Axios is a third party package/library to work with API's
+We use axios to access data from API's in the "json" format
+
+--> Install package axios
+ npm install axios
+--> Use "axios.get(url)"
+--> Use "fetch" method to get the data as a response
+--> Data can be formatted using json 
+-->--> "async"
+-->--> "wait"
+
+1. Bug - Mistake which may not be a problem but it will give you a symptom. It doesn't stop execution
+2. Issue - If you don't fix bugs, it leads to issues. It may not cause a problem but leads to error
+3. Error - Stops your program to be executed
+4. Syntax error - Language specific which will stop your program but we can correct syntax and run. Appears at Design time(compiling)
+5. Runtime error - Errors while execution, Logical errors which can't be resolved
+6. Exception - Run-Time errors which can be resolved 
+7. Exception handling - Mechanism to make sure Run-Time errors can be resolved
+------------------------------------------------------------------------------------------------------------------------------------------------------
+02-08-22
+Working with Proxy Server or Back End or Dummy data :
+Step 1 : We can demonstrate a back end server using an external tool or package called json-server
+Step 1 : Install the package json-server (npm install json-server)
+Step 2: Modify the package.json file under "Scripts key" with a new entry called server with a value of 
+Step 3 : After updating the package.json, run the server as "npm run server"
+Step 4: When we run the server it will create a database kind of json file named as "db.json"
+Step 5 : We can connect with the server by using "useState()" and "useEffect()"
+Step 6 : useState() is a hook which will use to set/get the values for states of components
+Step 7 : useEffect() is a hook which will work whenever there is a change in the given component. Both are meant for maintaining states.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+09-08-22
+Compiler name for JavaScript to convert source code to machine code is called ****BABEL****
+--------------------------------------------------------------------------------------------------------------------------------------------
+expresss framework
+postman download
+-> Node is not a programming language, package, third-party library
+-> Node is a run-time environment
+-> NodeJS is having an engine named as V8 created by Google Chrome where javascript can also be executed outside of a browser that is node 
+  facilitates JavaScript to be used to develop other kind of application like desktop,network,mobile etc.
+
+Features of Node :
+-> Node is used to create server side application
+-> Creation of back end server
+-> Single thread application
+-> Streaming applications
+-> Game development application 
+-> Also known as DIRT(Dynamic interactive 
+Eg : Netflix, Uber, Amazon
+**** -> It supports asynchronous based server application
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Limitations of Node : ( OPEN SOURCE IS THE BIGGEST DISADVANTAGE )
+-> It is not suitable for bigger applications like CRM(Customer relationship management)
+-> During load time it is slow
+-> Its updations are through packages which require continous monitoring
+-----------------------------------------------------------------------------------------------------------------------------------------------
+CALL BACK FUNCTION :
+-> A function can be passed as an argument to another function is called Callback function
+-> It is the only reason javaScript is dynamic
+
+There is a xerox centre with1 xerox machine and owner "X". He got 4 customers
+1. 10 pages of academic certificates
+2. 8 Medical Certificates
+3. 6 Travel tickets
+4. 22 pages of bank statements
+
+Steps to create Asynchronous
+1. Create a folder
+2. Open the code in VS Code
+3. Create a new file data.txt with data
+4. Create a test1.js
+5. Run the file in terminal using " node jstext1.js"
+6. Create another file text2.js
+7. Execute in terminal 'node test2.js"
+
+Synchronous way of execution follows sequential order
+Asynchronous way of execution : In this process depends on underlying OS
+
+Steps to create first Express application :
+1. Create a folder
+2. Open in VS Code the specific folder
+3. Use "npm init"
+4. Give accordingly values and press enter
+5. It will create a package.json
+6. Install by using npm install express
+7. Create a file index.js
+8. Use express as required
+9. Run using node index.js
+NOTE : We can define the port on which the server can run
+NOTE : We can define the routes or end points of our choice
+Each server route or end point takes 3 arguments
+  1. path 2. request object, reponse object 3. callback function
+******** Use appropriate console.log methods to track our application
+----------------------------------------------------------------------------------------------------------------------------------------------
+Status quotes : Status quotes are the numbers which will define our rquest and response status
+     --> 200 - success
+     --> 300
+     --> 400 - errors
+     --> 500 - internal server error
+----------------------------------------------------------------------------------------------------------------------------------------------
+Types of http method :
+1.get : returns all errors as object
+2.post : to create new object
+3.put : to modify/update the existing object
+4.delete : delete an object
+5.patch  : partial accessing/modification
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Express is a framework to develop web appliactions as well as server side applications as a single thread
+Express is used to create servers, API's , endpoints and also server side applications
+DJANGO, FLASK
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10-08-22
+EXPRESS :
+----------------
+--> Express is a web framework to develop server side application, API's, end points
+--> Express uses libraries like Routes, Middlewares, Hooks
+
+Task :
+-> Create a folder in the project named "public"
+-> Create one HTML page under public folder with the name as "about.html"
+-> Copy 2 images in the public folder and then copy the code in telegram
+****After app.get and before app.listen****
+app.get('/api/products',(req,res)=>{res.json(products)});
+
+app.use(express.static(path.join(__dirname,'public')));
+
+-> Test the files in server using localhost:3001/about.html  localhost:3001/imagename 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12-08-22
+Step 1: Create a component named as "Users.js"
+Note : Do not create Users.js in public folder
+Step 2: Create a variable "users" which will take a collection of 5 users
+Step 3: Each user is having 3 keys id,name,type
+**** Step 4: In order to export Express modules we use 
+                         *****  module.exports=users; *****
+
+----------------------------------------------------------------------------------------------------------------------------------
+--> Filter is a method of JavaScript to fetch or return a specific value based on condition
+--> In JavaScript we can compare the values using " === " operator
+---------------------------------------------------------------------------------------------------------------------------------
+Create a json data as Faculty.js, Department.js with minimum of 5 keys,values(4)
+Faculty : [id,name,qualification.designation]
+Department : [dept.name,dept.hod,countFaculty]
+import these values in index.js and create Routes/Endpoints based on facultyName,facultyDesignation
+In department create a Route/Endpoint where number of faculty > 20
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16-08-22
+-> To create new id we use uuid (universal unique)
+-> To post in Postman : url post body raw json
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+17-08-22
+-> Create a new React application
+-> Create a new backend application
+-> Create a data inside backend like Users.js
+-> Create a route/endpoint in backend and name as api (It is a get route)
+-> Create a key in react package.json as "proxy": localhost:3001
+**-> In (react) App.js use useState(),useEffect() (use Feedback as reference) to fetch backend data
+-> The backend name is backend (folder name for node server)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18-08-22
+npm install -D nodemon
+---------------index.js
+const express = require('express');
+const app = express()
+app.get('/', (req, res) => res.send('Hello'));
+app.listen(4321,()=>console.log('Server ready'));
+---------------package.json---scripts
+"start": "node index",
+"dev": "nodemon index"
+
+Yarn is a tool similar to npm but it is used for parallel installation or processing packages which is not possible through npm.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+23-08-22
+Security : Protecting data from external
+Safety : Anything we internally protect by system itself
+Authentication : With Credentials for safety and securing data
+Authorization : Authenticated people with Roles
+Privacy : 
+Permissions : Rules
+JWT : Json Web Token is a package to verify and authenticate the requests and produce the response
+
+Part 0,1,2 submitted in FullStackOpen
+Part 3,4 should be executed in system
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24-08-22
+Step 1: JWT is used for authorization purpose not for authentication of users to process requests and responses
+Step 2: As http is a "STATELESS" mechanism to process client requests
+Step 3: Each JWT token is divided into 3 parts :
+ 1. JWT header/Token header
+ 2. Payload
+ 3. Signature
+Step 4: JWT is called value based token authorization i.e. it's not referenced based authorization like session based tokens
+Step 5: JWT does not look like a Json file, it's a certificate
+Step 6: We can generate otr verify within our routes using header method. Each header method consists 
+ 	-> Algorithm
+	-> Payload
+ 	-> base64 encoded
+	-> signature
+
+--> HTTP is stateless	protocol. For each request details are not stored
+-> The state can be maintained
+-> We can hold state in 2 ways "
+ (i) Session based Token
+ 	1.Session : Server side storage
+	2. Cookies : Client side browser
+(ii) JWT based tokens
+
+**NOTE: The server will hold the secret key specific to each user who request for every source i.e. server has secret node only for specific user 
+**NOTE: JWT header consisting algorithm to encode base64 header :
+That algorithm is defined by server
+The payload is actual message which is stored by both encrypted and produced Signature.
+Payload is visible, its not encrypted 
+NOTE: Server can't store any information during the request. It only verifies signature
+
+
+4 digit number (1234)
+Add 7 to induvidual digits
+1234 : 8 9 10 11
+Swap 1,3 and 2,4 => 10 11 8 9
+-----------------------------
+Swap 8 9 10 11
+Sub 7 : 1 2 3 4
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06-09-22
+Steps to work with MongoDB schema :
+1. In order to work with MongoDB we cannot directly connect to the frontend React
+2. We must create an API which will store our database results using Express and Node
+3. From that API we render data in frontend 
+Steps to create API using MongoDB and Express :
+1. Create a database "s8" with a project name as "mongo1"
+ Use the above details and create a cluster in Atlas (Do not provide any data inside collections)
+2. Create a server within express with a name "mongo1"
+3. Create package.json using npm init
+4. Install the following packages (1) Express (2) Nodemon (3) Mongoose (4) dotenv
+5. Create index.js or server.js with basic setup (import Express, create instance of app, basic endpoint app.get( ), basic listen)
+****6. Create a file .env    All secret data or configuration data must be mentioned under .env only
+Eg : port numbers, connection strings, usernames, passwords  (use Atlas url to establish the connection)
+""NOTE : .env file is the file to configure our project information. This .env cannot be pushed into github so that our data is safe
+6. Run the project to verify whether the databse is connected or not 
+7. Create a folder named as "models". Under models create schema and establish a connection by providing an endpoint with http request 
+as post. For reference follow Part 3 Section C
+8. Test the endpoint(post in postman)
+9. Verify whether schema is created under Atlas or not
+Username : admin123
+Password : admin123
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+07-09-22
+MVC Architecture using MERN Stack
+M : Model - Database connectivity, queries
+V : View - Templates / HTML files / All Front-End part
+C : Controller - Business Logic
+In MERN Stack application we must follow MVC Architecture by creating a special directories inside our application/project
+1. models 
+2. routes - 
+3. controllers - consist all the logic, accessing, validation etc
+NOTE : 
+--> Controllers consist of database queries like in MongoDB
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13-09-22
+Steps to work with CRUD operations :
+1. Create database under Atlas
+2. Create a folder called "crudop". Inside create 2 folders ---> client | ---> server
+3. Use axios, proxy at front-end and routes, nodemon, dotenv as back-end
+
+1. Login into MongoDB
+2. Create a project
+3. Create a cluster
+4. Create a user
+5. Create a database (res)
+6. **Create a sample collection (Customer)
+7. Network configuration in Atlas by editing as allow all IP addresses and devices
+8. Afetr successful creation of cluster click on connect button and select connect through application and then select URL stream.
+9. Replace password and mention database name in connection stream
+
+mongodb+srv://admin123:<admin123>@cluster0.cyhjofv.mongodb.net/res?retryWrites=true&w=majority
+
+While creating server : 
+npm i express nodemon dotenv mongoose
+package.json : start:node index devstart:nodemon index 
+
+
+Hooks : Works in place of variables functions managing states of variables
+useState(),useEffect()
+Axios : Library to check parts
+**************** avoid async promise ***********
