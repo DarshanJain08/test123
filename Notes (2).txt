@@ -621,3 +621,5 @@ Hooks : Works in place of variables functions managing states of variables
 useState(),useEffect()
 Axios : Library to check parts
 **************** avoid async promise ***********
+
+End Exam
